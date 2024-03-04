@@ -120,29 +120,42 @@
             <div id="project-details">
               <div class="subheader-text">Week 1-2</div>
               <div class="project-details-content">
-                <div class="body-text">In the initial weeks, I delved into Norconsult's GIS/Remote Sensing department for my LIA. My tasks involved adding metadata to their database and creating a catalog of Sweden's open data. I learned about the Geopangea web service and discussed strategies with the team.</div>
+                <div class="body-text">In the initial weeks, I delved into Norconsult's GIS/Remote Sensing department for my LIA. My tasks involved adding metadata to their database and creating a catalog of Sweden's open data. I learned about their Geopangea web service (where the metadata were to be merged) and gained insight in the strategies the team was working towards.</div>
               </div>
             </div>
 
-            <div class="gallery-image-container half-width">
-              <img src="../assets/images/Raster_analysis/Landsat_tif.png" class="gallery-image">
-              <span class="image-caption" style="font-style: italic; ">Here is the original satellite capture from Landsat7 in .tif format</span>
-            </div>
-            <div class="gallery-image-container half-width">
-              <img src="../assets/images/Raster_analysis/MultiSpec.png" class="gallery-image">
-              <span class="image-caption" style="font-style: italic; ">Here we see what it looks like when imported into Multispec. As you can see different classes are plotted out</span>
+            <div class="gallery-image-container">
+              <img src="../assets/images/LIA/Geopangea.png" class="gallery-image">
+              <span class="image-caption" style="font-style: italic; ">Image created by Bing image creator</span>
             </div>
             <div id="project-details">
               <div class="subheader-text">Week 3-4</div>
               <div class="project-details-content">
-                <div class="body-text">During these weeks, I discovered the convenience of downloading geodata catalog information into CSV files, streamlining the process. I explored Sweden's Data Portal for metadata and investigated API calls for extraction. Developing an FME workflow for CSV with XML links was a significant achievement.</div>
+                <div class="body-text">During these weeks, I discovered the convenience of downloading geodata information from Länsstyrelsens (County administrative board) "Geodatakatalog" into CSV files, streamlining the process. I explored Sweden's Data Portal for metadata and investigated API calls for extraction. Developing an FME workflow for CSV with XML links was a significant achievement.</div>
               </div>
             </div>
-            <div class="gallery-image-container">
-              <img src="../assets/images/Raster_analysis/Ganges.png" class="gallery-image">
-              <span class="image-caption" style="font-style: italic; ">Here we have the outcome of the first excercise where we had to classify the Ganges delta.</span>
+            # Image half-width container
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/LIA/Geodatakatalogen.png" class="gallery-image">
+              <span class="image-caption" style="font-style: italic; ">An example of how to download metadata to a CSV-file from Geodatakatalogen</span>
             </div>
-            
+            # Image half-width container
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/LIA/xmlworkflow.png" class="gallery-image">
+              <span class="image-caption" style="font-style: italic; ">Here is a sample of a workflow in FME where I extracted the metadata from the CSV file</span>
+            </div>
+            # Modal for image
+            <div id="myModal" class="modal">
+              <span class="close">&times;</span>
+              <img class="modal-content" id="modalImg">
+            </div>
+            # Project details
+            <div id="project-details">
+              <div class="subheader-text">Week 5-6</div>
+              <div class="project-details-content">
+                <div class="body-text">These weeks involved a deep dive into metadata standards like DCAT-AP and ISO 19139, understanding their roles in data representation. I also began exploring HTML report generation for metadata cataloging. It was a period of exploring various methods to organize and filter metadata effectively.</div>
+              </div>
+            </div>
             <div class="gallery-image-container">
               <img src="../assets/images/Raster_analysis/Landsat_Mexiko.png" class="gallery-image">
               <span class="image-caption" style="font-style: italic; ">Here is another satellite capture from Landsat7 in .tif format from a rural area in southeast Mexico</span>
@@ -150,12 +163,24 @@
               <img src="../assets/images/Raster_analysis/Unknown.png" class="gallery-image">
               <span class="image-caption" style="font-style: italic; ">Here we have the classified image of the area </span>
             </div>
-            <div class="body-text"></div>
             <div id="project-details">
-              <div class="subheader-text">Deforestation</div>
+              <div class="subheader-text">Week 7-8</div>
               <div class="project-details-content">
-                <div class="body-text">In a later exercise we were provided with two historical satellite images (1975) over two different areas in the Amazonas to classify. In addition to the historical images we classified the same area in 2016. The aim was to highlight the deforestation that has been going in this region.</div>
-                <div class="body-text">The historical satellite images highlight how thick and compact the rainforest was during the time but its clear pathways were prepared for and that these areas were about to change. So as one can see there has been a significant change over the years.</div>
+                <div class="body-text">In this phase, I expanded metadata sources and returned focus to linking metadata to Norconsult's geodatabase. Utilizing the Inspire Geoportal for missing metadata sources was crucial. Revisiting webscraping methods for metadata link compilation was another key achievement.</div>
+              </div>
+            </div>
+
+              # Add images between these two divs
+
+            <div class="gallery-image-container">
+              <img src="../assets/images/Raster_analysis/Raster_analysis_1.png" class="gallery-image">
+              <span class="image-caption"></span>
+            </div>
+
+            <div id="project-details">
+              <div class="subheader-text">Week 9-10</div>
+              <div class="project-details-content">
+                <div class="body-text">The final weeks were dedicated to linking metadata to datasets in PostgreSQL using FME. I developed a process for Geopangea's summary reports, integrating metadata effectively. These weeks also involved understanding and bridging the differences between metadata standards like ISO 19139 and DCAT-AP.</div>
               </div>
             </div>
             <div class="gallery-image-container">
