@@ -9,13 +9,7 @@ So after spending parental leave with my second child 2022 I began studying to b
 
 So as I journey through the fascinating world of Geographic Information Systems (GIS), I'm documenting my mapping adventures right here. Whether I'm plotting the best coffee spots in town ☕, analyzing urban sprawl 🏙️, or tracing the migratory paths of majestic birds 🦅, you'll find my cartographic creations evolving with each step of my GIS coordinator studies.
 
-## Portfolio Highlights
-
-
-
-## How to Use
-
-Each project in this portfolio usually comes in swedish as that is where I live, work and study. I will conduct every changes and uploads in english so everything should be easy to follow. Navigate to the project folder of interest to find detailed READMEs on how to run the code, visualize the maps, and interpret the findings.
+**GIS Portfolio:** [Check it out](https://olivig.github.io)
 
 ## Technologies Used
 
