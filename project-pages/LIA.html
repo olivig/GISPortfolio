@@ -1,0 +1,189 @@
+
+
+<!--
+  IMPORTANT!
+
+  Keep this file unchanged to use as a template for all future project pages.
+
+  For every new project you add to your portfolio, make a copy of this file in the
+  'project-pages' folder with a name related to the project.
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+    <!--
+      TODO
+
+      Upload your Unemployable (or whatever photo you like) to the assets/images folder
+      and change the name of the image below to match the uploaded one
+
+      Change the title in the <title> tag to whatever you would like the title of your portfolio to be
+
+      This should be the same across all pages.
+     -->
+     <link rel="icon" href="../assets/images/1311.png" />
+     <title>Oli Viglundsson GIS Portfolio</title>
+    <meta name="description" content="A portfolio template for the Unemployables community.">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+
+		<script defer src="../js/script.js"></script>
+	</head>
+	<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="nav-title-link" href="../index.html">
+        <!--
+          TODO - Change the "Portfolio Title" to whatever you want displayed in the top left
+
+          (this should be the same across all pages)
+         -->
+        <span class="nav-title">GIS Portfolio</span>
+        <!--
+          TODO - Change the email after 'mailto:' to your email address for contact
+
+          (this should be the same across all pages)
+        -->
+        <a class="button" href="mailto:oli.viglundsson@gmail.com">
+          <span class="button-text">Contact Me</span>
+        </a>
+      </a>
+    </div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
+
+      <!-- PROJECT HEADER -->
+      <div id="project-header">
+          <!--
+            TODO
+
+            - Change the 'main-title' text to the name of your project
+            - Change the 'body-text' text to a short and sweet description of your project (maybe the same as the one on the project card)
+            - Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
+          -->
+        <div class="main-title">Internship project</div>
+        <div class="body-text">A work process in how to work with the implementation of metadata and automated flows. </div>
+        <image class="project-header-image" src="../assets/images/Raster_analysis/Channel_Islands.png">
+      </div>
+
+      <!-- PROJECT DETAILS -->
+      <!--
+        TODO
+
+        - Change the 'subheader-text' to whatever header you want for project details
+        - Add paragraphs using the <div class="body-text"></div> elements in the "project-details-content"
+      -->
+      <div id="project-details">
+        <div class="subheader-text">Project Details / Background</div>
+        <div class="project-details-content">
+          <div class="body-text">During the fall of 2023 we had to reach out to organisations that worked with GIS in order to find ourselves an internship spot for 10 weeks! I got in touch with Felipe Verdú, group leader (and a GIS Guru!) at GIS & Remote Analysis at Norconsult AB, we discussed a bit about my previous academic background as a human geographer and what Ive already learned during the spring semester at Ocellus as well as what I wanted to delve into and learn more about. I mentioned that I was interested in learning more about QGIS and that I understood that FME was a useful program that is used quite a bit in the workplaces that work with GIS. </div>
+          <div class="body-text">Since they use PostgreSQL databases on GIS & Remote Sensing and needed to populate metadata to the datasets they have in their main geodatabase, he suggested I look into a plug-in for QGIS called PgMetadata and that I could get back to him if it was interesting to me. 
+            Working on popularizing and collecting metadata didn't sound like a fun map visualization project I had initially imagined, but what I was able to read was that this is an important work that many organizations working in both the public and private sectors have a great need for. I got in touch again and accepted the internship position.</div>
+        </div>
+      </div>
+
+      <!-- IMAGE GALLERY -->
+      <div id="project-gallery">
+        <!-- TODO - Change the 'subheader-text' to whatever you want the Gallery section header to say -->
+        <div class="subheader-text">Image Gallery</div>
+        <div class="project-gallery-content">
+            <!--
+              TODO
+
+              This is where the images in the gallery live. Here's a simple gallery image for you to copy:
+
+              Full Width Image:
+
+                <div class="gallery-image-container">
+                  <img src="../assets/images/IMAGE_NAME" class="gallery-image">
+                  <span class="image-caption">IMAGE_CAPTION</span>
+                </div>
+
+              Half Width Image:
+
+                <div class="gallery-image-container half-width">
+                  <img src="../assets/images/IMAGE_NAME" class="gallery-image">
+                  <span class="image-caption">IMAGE_CAPTION</span>
+                </div>
+
+              - To add an image to the this area, copy one of the above, paste it below this comment, and change the following:
+                  - IMAGE_NAME: the name of the image file in assets/images
+                  - IMAGE_CAPTION: to the caption of the image
+            -->
+            <div id="project-details">
+              <div class="subheader-text">Week 1-2</div>
+              <div class="project-details-content">
+                <div class="body-text">In the initial weeks, I delved into Norconsult's GIS/Remote Sensing department for my LIA. My tasks involved adding metadata to their database and creating a catalog of Sweden's open data. I learned about the Geopangea web service and discussed strategies with the team.</div>
+              </div>
+            </div>
+
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/Raster_analysis/Landsat_tif.png" class="gallery-image">
+              <span class="image-caption" style="font-style: italic; ">Here is the original satellite capture from Landsat7 in .tif format</span>
+            </div>
+            <div class="gallery-image-container half-width">
+              <img src="../assets/images/Raster_analysis/MultiSpec.png" class="gallery-image">
+              <span class="image-caption" style="font-style: italic; ">Here we see what it looks like when imported into Multispec. As you can see different classes are plotted out</span>
+            </div>
+            <div id="project-details">
+              <div class="subheader-text">Week 3-4</div>
+              <div class="project-details-content">
+                <div class="body-text">During these weeks, I discovered the convenience of downloading geodata catalog information into CSV files, streamlining the process. I explored Sweden's Data Portal for metadata and investigated API calls for extraction. Developing an FME workflow for CSV with XML links was a significant achievement.</div>
+              </div>
+            </div>
+            <div class="gallery-image-container">
+              <img src="../assets/images/Raster_analysis/Ganges.png" class="gallery-image">
+              <span class="image-caption" style="font-style: italic; ">Here we have the outcome of the first excercise where we had to classify the Ganges delta.</span>
+            </div>
+            
+            <div class="gallery-image-container">
+              <img src="../assets/images/Raster_analysis/Landsat_Mexiko.png" class="gallery-image">
+              <span class="image-caption" style="font-style: italic; ">Here is another satellite capture from Landsat7 in .tif format from a rural area in southeast Mexico</span>
+            </div><div class="gallery-image-container">
+              <img src="../assets/images/Raster_analysis/Unknown.png" class="gallery-image">
+              <span class="image-caption" style="font-style: italic; ">Here we have the classified image of the area </span>
+            </div>
+            <div class="body-text"></div>
+            <div id="project-details">
+              <div class="subheader-text">Deforestation</div>
+              <div class="project-details-content">
+                <div class="body-text">In a later exercise we were provided with two historical satellite images (1975) over two different areas in the Amazonas to classify. In addition to the historical images we classified the same area in 2016. The aim was to highlight the deforestation that has been going in this region.</div>
+                <div class="body-text">The historical satellite images highlight how thick and compact the rainforest was during the time but its clear pathways were prepared for and that these areas were about to change. So as one can see there has been a significant change over the years.</div>
+              </div>
+            </div>
+            <div class="gallery-image-container">
+              <img src="../assets/images/Raster_analysis/Raster_analysis_1.png" class="gallery-image">
+              <span class="image-caption"></span>
+            </div>
+            <div class="gallery-image-container">
+              <img src="../assets/images/Raster_analysis/Raster_analysis_2.png" class="gallery-image">
+              <span class="image-caption"></span>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+      <!--
+        TODO - Change href to your Instagram account (can also delete entire "a" element if no Instagram)
+
+        This should be the same across all pages.
+      -->
+      <a class="icon-link" target="_blank" href="https://www.linkedin.com/in/%C3%B3li-valur-viglundsson-74400681/">
+        <image src="../assets/icons/linkedin-svgrepo-com.svg" class="footer-icon"/>
+      </a>
+<a class="icon-link" href="mailto:oli.viglundsson@gmail.com">
+        <image src="../assets/icons/mail.svg" class="footer-icon"/>
+      </a>
+    </div>
+
+	</body>
+</html>
