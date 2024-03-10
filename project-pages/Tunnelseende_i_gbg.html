@@ -69,10 +69,7 @@
             - Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
           -->
         <div class="main-title">Tunnelseende i Göteborg</div>
-        <div class="body-text">Tunnelseende i Göteborg ("Tunnelvision in Gothenburg") is the name of this project which me and my back then studybuddy Ola Sandberg created back in late 2019. </div>
-
-
-        </div>
+        <div class="body-text">Tunnelseende i Göteborg ("Tunnelvision in Gothenburg") is the name of this project which me and my back then studybuddy Ola Sandberg created back in late 2019.</div>
         <image class="project-header-image" src="../assets/images/Multicriteria_Analysis_1.jpg">
       </div>
 
@@ -87,15 +84,12 @@
         <div class="subheader-text">Project Details / Background</div>
         <div class="project-details-content">
           <div class="body-text">In the 1960s, there were plans to build a city rail line / express tramway in tunnels under central Gothenburg. The plans are presented in the Express Tramway Investigation from 1967. The investigation includes, among other things, geological surveys and conditions for this project, as well as maps with planned route lines and stations.</div>
-          <div class="body-text">Drawing inspiration from the Express Tramway Investigation and the tunnel routes proposed in the investigation, there was a curious need to review a suitable analysis tool that could support or find alternative solutions to these routes. The starting points are the station locations proposed in the investigation. The analysis has been done from station to station using a "Cost Path Analysis" based on a number of parameters such as: 'depth of soil', 'soil type', 'road network', and 'buildings'.</<div>
+          <div class="body-text">Drawing inspiration from the Express Tramway Investigation and the tunnel routes proposed in the investigation, there was a curious need to review a suitable analysis tool that could support or find alternative solutions to these routes. The starting points are the station locations proposed in the investigation. The analysis has been done from station to station using a "Cost Path Analysis" based on a number of parameters such as: 'depth of soil', 'soil type', 'road network', and 'buildings'.</div>
+        </div>
       </div>
 
       <!-- IMAGE GALLERY -->
-      <div id="project-gallery">
-        <!-- TODO - Change the 'subheader-text' to whatever you want the Gallery section header to say -->
-        <div class="subheader-text">Image Gallery</div>
-        <div class="project-gallery-content">
-            <!--
+                  <!--
               TODO
 
               This is where the images in the gallery live. Here's a simple gallery image for you to copy:
@@ -120,24 +114,38 @@
             -->
             <div class="gallery-image-container">
               <img src="../assets/images/Figur3.jpg" class="gallery-image">
-              <span class="image-caption">This was the result of the georeferenced and digitized map at a scale of 1:40,000. The type of tunnel/track is visualized with each having a distinct color: rock tunnel in blue, soil tunnel in red, existing express tramway in green, and open track in yellow. The purpose of the color scheme is to more clearly differentiate the various tunnel and track sections that the original map from 1967 has been divided into. Other color choices for land use are depicted in the legend. The north arrow and scale are placed in the lower right corner.</span>
+              <span class="image-caption" style="font-style: italic; ">This was the result of the georeferenced and digitized map at a scale of 1:40,000. The type of tunnel/track is visualized with each having a distinct color: rock tunnel in blue, soil tunnel in red, existing express tramway in green, and open track in yellow. The purpose of the color scheme is to more clearly differentiate the various tunnel and track sections that the original map from 1967 has been divided into.</span>
             </div>
+
+            <div class="gallery-image-container">
+              <img src="../assets/images/Model_builder.png" class="gallery-image">
+              <span class="image-caption" style="font-style: italic; ">Here is the workflow that we built with model builder to perform the multicriteria analysis.</span>
+            </div>
+
             <div class="gallery-image-container">
               <img src="../assets/images/Figur6.jpg" class="gallery-image">
-              <span class="image-caption">This map is a combination of two results in one map at a scale of 1:40,000, along with a slightly smaller separate overall map of the lines produced with "Cost Path Analysis." The multicriteria analysis takes up the most space and serves as a visual cost basis for where and how it is cheapest or most expensive to build tunnels according to all the collected criteria.</span>
+              <span class="image-caption" style="font-style: italic; ">This map is a combination of two results in one map at a scale of 1:40,000, along with a slightly smaller separate overall map of the lines produced with "Cost Path Analysis." The multicriteria analysis takes up the most space and serves as a visual cost basis for where and how it is cheapest or most expensive to build tunnels according to all the collected criteria.</span>
             </div>
+
             <div class="gallery-image-container">
               <img src="../assets/images/Figur7.jpg" class="gallery-image">
-              <span class="image-caption">Here is a final visualization of all interventions and analyses conducted. It consists of an overview visualization of the network at a scale of 1:40,000, along with five smaller zoomed-in maps at a scale of 1:10,000 focusing on the branching stations in the network. The land use layer is slightly transparent even in this map to highlight the route lines. The route lines consist of 6 fictional subway lines originating from a couple of main stations in the network.
-</span>
+              <span class="image-caption" style="font-style: italic; ">Here is a final visualization of all interventions and analyses conducted. It consists of an overview visualization of the network at a scale of 1:40,000, along with five smaller zoomed-in maps at a scale of 1:10,000 focusing on the branching stations in the network. The land use layer is slightly transparent even in this map to highlight the route lines. The route lines consist of 6 fictional subway lines originating from a couple of main stations in the network.</span>
             </div>
-        </div>
+
+<!-- Link to Full Report -->
+<div class="full-report-link">
+  <p>Follow this link to read the full report:</p>
+  <a href="../assets/images/Multicriteria_Analysis.pdf" target="_blank">Tunnelseende i Göteborg</a>
+</div>
+
+          </div>
       </div>
     </div>
     <div id="myModal" class="modal">
       <span class="close">&times;</span>
       <img class="modal-content" id="modalImg">
     </div>
+    
     <!-- FOOTER -->
     <div id="footer">
       <!--
@@ -148,18 +156,7 @@
       <a class="icon-link" target="_blank" href="https://www.linkedin.com/in/%C3%B3li-valur-viglundsson-74400681/">
         <image src="../assets/icons/linkedin-svgrepo-com.svg" class="footer-icon"/>
       </a>
-      <!--
-        TODO - Change href to your Twitter account (can also delete entire "a" element if no Twitter)
-
-        This should be the same across all pages.
-      -->
-
-      <!--
-        TODO - Change the email after "mailto" to your contact email
-
-        This should be the same across all pages.
-      -->
-      <a class="icon-link" href="mailto:oli.viglundsson@gmail.com">
+<a class="icon-link" href="mailto:oli.viglundsson@gmail.com">
         <image src="../assets/icons/mail.svg" class="footer-icon"/>
       </a>
     </div>
