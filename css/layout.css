@@ -28,6 +28,11 @@ body {
 }
 
 
+/* Add smooth scrolling */
+
+html {
+  scroll-behavior: smooth;
+}
 
 
 /* Portfolio Header */
@@ -89,18 +94,23 @@ body {
 
 .projects-container {
   display: flex;
-  gap: 34px 16px;
   flex-wrap: wrap;
+  gap: 16px; /* Adjusted to have consistent spacing */
+  justify-content: space-between; /* Ensure spacing between items */
 }
+
 
     /* Project Cards */
 
     .project-card {
-      max-width: calc((100% - 32px) / 3);
-      display: flex;
-      flex-direction: column;
-      gap: 34px;
-    }
+  flex: 1 1 calc(33% - 16px); /* Ensures 3 cards per row, adjusting for gap */
+  margin-bottom: 32px; /* Space between rows */
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-sizing: border-box;
+}
+
 
     .project-card-text-container {
       flex-direction: column;
@@ -109,11 +119,18 @@ body {
     }
 
     .project-image {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      object-position: center;
+  width: 100%;
+  height: 200px; /* Fixed height for consistency */
+  object-fit: cover; /* Ensures the images don't stretch or distort */
+  object-position: center; /* Centers the image */
+}
+
+
+    .project-card:hover {
+      transform: scale(1.05);
+      transition: transform 0.3s ease;
     }
+
     .project-image:hover {
       transform: scale(1.1);
     }
@@ -296,5 +313,43 @@ body {
 
   .project-card {
     max-width: 100%;
+  }
+}
+
+/* Specific Grid Layout for the Project Page */
+.specific-project-page #project-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.specific-project-page .project-gallery-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(4cm, 1fr));
+  gap: 16px;
+}
+
+.specific-project-page .gallery-image-container {
+  width: 4cm;
+  height: 4cm;
+  overflow: hidden; /* Ensures the image fits within the square */
+}
+
+.specific-project-page .gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire square */
+}
+
+/* Responsive Grid for Small Devices on Specific Project Page */
+@media only screen and (max-width: 800px) {
+  .specific-project-page .project-gallery-content {
+      grid-template-columns: repeat(auto-fit, minmax(3cm, 1fr));
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .specific-project-page .project-gallery-content {
+      grid-template-columns: repeat(auto-fit, minmax(2.5cm, 1fr));
   }
 }

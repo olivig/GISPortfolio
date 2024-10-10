@@ -21,7 +21,9 @@
 		<link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/typography.css">
     <link rel="stylesheet" href="./css/utilities.css">
-
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    
 		<script defer src="./js/script.js"></script>
 	</head>
 	<body>
@@ -36,11 +38,7 @@
         <span class="button-text">Contact Me</span>
         <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon">
       </a>
-<br>
-      <a class="button" href="./assets/CV.pdf" target="_blank">
-        <span class="button-text">CV / Resume</span>
-        <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon">
-      </a>
+
     </div>
   </div>
     
@@ -77,6 +75,10 @@
               <span class="button-text">Check out my projects</span>
               <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
             </a>
+            <a class="button" href="./assets/Oli_Viglundsson_CV2024.pdf" target="_blank">
+              <span class="button-text">CV / Resume</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon">
+            </a>
         </div>
       </div>
 
@@ -90,12 +92,11 @@
       <div id="about-section">
         <span class="subheader-text">About Me</span>
         <div class="about-section-content">
-          <div class="body-text">I came across GIS when I studied for my bachelor in human geography with a focus on urban and rural planning a few years ago. When I finished my bachelors program in 2021 all I wanted to do was to start working with planning but the post-pandemic situation was tough and I had to review what I really found most interesting when it came down to my years of studies. The answer was Geographic Information Systems. Working with GIS was something that in terms of interest, really stood out during my university studies. So after spending parental leave with my second child 2022 I began studying to become a GIS coordinator in the beginning 2023.</div>
+          <div class="body-text">I came across GIS when I studied for my bachelor in human geography with a focus on urban and rural planning a few years ago. When I finished my bachelors program in 2021 all I wanted to do was to start working with planning but the post-pandemic situation was tough and I had to review what I really found most interesting when it came down to my years of studies. The answer was Geographic Information Systems. Working with GIS was something that in terms of interest, really stood out during my university studies. So after having spent a years parental leave with my second child 2022, I began studying to become a GIS coordinator in the beginning 2023.</div>
           <div class="body-text">So as I journey through the fascinating world of Geographic Information Systems (GIS), I'm documenting my mapping adventures right here and you'll find my cartographic creations evolving with each step of my GIS coordinator studies.</div>
         </div>
       </div>
-      
-      <!-- PROJECTS / MY WORK SECTION -->
+        <!-- PROJECTS / MY WORK SECTION -->
       <div id="my-work-section">
         <!-- TODO - Change the subheader-text to whatever you want the Projects section header to say -->
         <span class="subheader-text">My Projects</span>
@@ -123,6 +124,35 @@
                 - SMALL_PROJECT_DESCRIPTION: a quick project description (max 4 lines)
                 - PROJECT_PAGE_NAME.html: the html filename for the project (must be in project-pages folder)
           -->
+
+          <div class="project-card">
+            <a href="./project-pages/urban-heat-islands-gis_detaljplan.html">
+                <img src="./assets/images/UHI/Figur 8.png" class="project-image">
+            </a>
+            <div class="project-card-text-container">
+                <div class="subheader-text project-title">Urban Heat Islands & GIS</div>
+                <div class="body-text project-card-text">GIS-Coordinator final thesis, studying the urban heat island effect and how Gothenburg adresses heat challenges</div>
+            </div>
+            <a class="button" href="./project-pages/urban-heat-islands-gis_detaljplan.html">
+                <span class="button-text">Read More</span>
+                <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+        </div>
+        
+        <div class="project-card">
+          <a href="./project-pages/public-administration.html">
+              <img src="./assets/images/Public_administration/DALL·E.webp" class="project-image">
+          </a>
+          <div class="project-card-text-container">
+              <div class="subheader-text project-title">Public administration and political science study</div>
+              <div class="body-text project-card-text">A GIS analysis displaying the accessibility of public services in Gothenburg</div>
+          </div>
+          <a class="button" href="./project-pages/public-administration.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+          </a>
+      </div> 
+
           <div class="project-card">
             <a href="./project-pages/Detaljplan.html">
                 <img src="./assets/images/Detaljplan/Projectcard.png" class="project-image">
@@ -135,8 +165,8 @@
                 <span class="button-text">Read More</span>
                 <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
             </a>
-        </div>        
-
+        </div>
+        
           <div class="project-card">
             <a href="./project-pages/LIA.html">
                 <img src="./assets/images/LIA/Intern.png" class="project-image">
@@ -185,7 +215,7 @@
             </a>
 						<div class="project-card-text-container">
 							<div class="subheader-text project-title">Segregerad stad ("Segregated city")</div>
-							<div class="body-text project-card-text">Thematic maps that highlight inequalities and sprawl in the city of Gothenburg</div>
+							<div class="body-text project-card-text">Highlighting inequalities and sprawl in Gothenburg</div>
 						</div>
 						<a class="button" href="./project-pages/Segregation_Analysis.html">
 							<span class="button-text">Read More</span>
@@ -206,7 +236,8 @@
 							<image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
 						</a>
 					</div>
-
+      
+        
 
     <!-- FOOTER -->
     <div id="footer">
@@ -235,6 +266,13 @@
         <image src="./assets/icons/Gmail_icon.svg" class="footer-icon"/>
       </a>
     </div>
+
+<!-- Modal Structure -->
+<div id="modal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modal-img">
+  <div id="caption"></div>
+</div>
 
 	</body>
 </html>

@@ -1,0 +1,199 @@
+
+<!--
+  IMPORTANT!
+
+  Keep this file unchanged to use as a template for all future project pages.
+
+  For every new project you add to your portfolio, make a copy of this file in the
+  'project-pages' folder with a name related to the project.
+-->
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<!--
+      TODO
+
+      Upload your Unemployable (or whatever photo you like) to the assets/images folder
+      and change the name of the image below to match the uploaded one
+
+      Change the title in the <title> tag to whatever you would like the title of your portfolio to be
+
+      This should be the same across all pages.
+     -->
+<link href="../assets/images/1311.png" rel="icon"/>
+<title>Urban Heat Islands &amp; GIS: Gothenburg's Climate Adaptation Strategies</title>
+<meta content="A project analyzing Urban Heat Islands in Gothenburg using GIS." name="description"/>
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<link href="../css/layout.css" rel="stylesheet"/>
+<link href="../css/typography.css" rel="stylesheet"/>
+<link href="../css/utilities.css" rel="stylesheet"/>
+<script defer="" src="../js/script.js"></script>
+</meta></head>
+<body>
+<!-- NAVBAR -->
+<div class="navbar">
+<a class="nav-title-link" href="../index.html">
+<!--
+          TODO - Change the "Portfolio Title" to whatever you want displayed in the top left
+
+          (this should be the same across all pages)
+         -->
+<span class="nav-title">GIS Portfolio</span>
+<!--
+          TODO - Change the email after 'mailto:' to your email address for contact
+
+          (this should be the same across all pages)
+        -->
+<a class="button" href="mailto:oli.viglundsson@gmail.com">
+<span class="button-text">Contact Me</span>
+</a>
+</a>
+</div>
+<!-- MAIN PAGE CONTENT -->
+<div id="main-content">
+<!-- PROJECT HEADER -->
+<div id="project-header">
+<!--
+            TODO
+
+            - Change the 'main-title' text to the name of your project
+            - Change the 'body-text' text to a short and sweet description of your project (maybe the same as the one on the project card)
+            - Change "desktop.jpeg" to the image filename you uploaded in the assets/images folder.
+          -->
+<div class="main-title">Urban Heat Islands &amp; GIS: Gothenburg's Climate Adaptation Strategies</div>
+<br>
+<div class="body-text">This is the final thesis from my two years studying to become a GIS-Coordinator. The thesis investigates Gothenburg’s efforts to address climate-related heat challenges, focusing on the Urban Heat Island phenomenon using GIS and satellite data.</div>
+<br>
+<image class="project-header-image" src="../assets/images/UHI/Urban_heat_island.png"/>
+</div>
+<!-- PROJECT DETAILS -->
+<!--
+        TODO
+
+        - Change the 'subheader-text' to whatever header you want for project details
+        - Add paragraphs using the <div class="body-text"></div> elements in the "project-details-content"
+      -->
+<div id="project-details">
+<div class="subheader-text">Summary</div>
+<div class="project-details-content">
+  <div class="project-details-content">
+    <div class="body-text">The thesis investigates how Gothenburg addresses climate-related heat challenges, focusing on urban heat islands through the use of GIS and satellite data analysis. By analyzing land surface temperatures using satellite data and Google Earth Engine, particularly vulnerable areas in the city were identified, mainly the central and densely built-up areas with low vegetation, where surface temperatures can exceed +40°C during the summer months. The study also reveals that areas with more vegetation and water bodies have lower temperatures, highlighting the importance of green and blue infrastructure to mitigate the effects of urban heat islands.
+    </div>
+    <div class="body-text">Gothenburg has implemented strategies to address these challenges, including the expansion of parks, tree planting, and water areas, in line with the city's environmental and climate program as well as the climate adaptation plan for 2024–2026. The results of the GIS analysis confirm that these strategies are effective in reducing temperatures in the urban environment. GIS plays a central role in monitoring heat phenomena and providing decision-makers with the tools to take appropriate action. A remaining challenge is to communicate the results clearly and accessibly to both the public and decision-makers, which is crucial for integrating the analyses into urban planning.</div>
+    </div>
+    <div class="full-report-link">
+      <div class="project-details-content">
+      <div class="body-text">
+        <p>This project was my final exam after two years of studying to become a GIS-Coordinator through Ocellus Information Systems. If you want to read the full report follow the link below:</p>
+        <a href="../assets/reports/Examensarbete_UHI_Oli_Viglundsson.docx" target="_blank">Urbana Värmeöar & GIS: Göteborgs strategier för att hantera klimatrelaterade värmeutmaningar</a>
+      </div>
+      </div>
+    </div>
+    </div>
+<br>
+<!-- IMAGE GALLERY -->
+<div id="project-gallery">
+<!-- TODO - Change the 'subheader-text' to whatever you want the Gallery section header to say -->
+<div class="subheader-text"></div>
+<div class="project-gallery-content">
+<!--
+              TODO
+
+              This is where the images in the gallery live. Here's a simple gallery image for you to copy:
+
+              Full Width Image:
+
+                <div class="gallery-image-container">
+                  <img src="../assets/images/IMAGE_NAME" class="gallery-image">
+                  <span class="image-caption">IMAGE_CAPTION</span>
+                </div>
+
+              Half Width Image:
+
+                <div class="gallery-image-container half-width">
+                  <img src="../assets/images/IMAGE_NAME" class="gallery-image">
+                  <span class="image-caption">IMAGE_CAPTION</span>
+                </div>
+
+              - To add an image to the this area, copy one of the above, paste it below this comment, and change the following:
+                  - IMAGE_NAME: the name of the image file in assets/images
+                  - IMAGE_CAPTION: to the caption of the image
+            -->
+<div id="project-details">
+  <div class="subheader-text">Land cover</div>
+  <div class="project-details-content">
+  <div class="body-text">To classify and gain an overview of the land surfaces contributing to temperature changes, the National Land Cover Data from the Swedish Environmental Protection Agency has been utilized. Building polygons are sourced from the base map of Gothenburg city and are classified as impervious surfaces, primarily for visualization purposes. The study partly follows the methodology and practical application described in the Swedish Public Health Agency's report, <i>Kartläggning av bebyggelse med risk för höga temperaturer</i>
+
+    The land cover data has been vectorized to calculate the proportion of different surface types.
+    <br>
+    <br>
+    <b>Surface Types and Coverage</b>
+    <br>
+    <br><i>
+    Impervious Surfaces: 11.09%
+    <br>
+    High Vegetation: 18.73%
+    <br>
+    Low Vegetation: 13.87%
+    <br>
+    Open Water Surfaces: 56.30%</i>
+  </div>
+  </div>
+  </div>
+  <div class="gallery-image-container">
+    <img class="gallery-image" src="../assets/images/UHI/Figur 1.png"/>
+    <span class="image-caption">Visualizing landcover data for the administrative area of Gothenburg</span>
+  </div>
+<div id="project-details">
+<div class="subheader-text">Land Surface Temperature (LST)</div>
+<div class="project-details-content">
+<div class="body-text">The LST map was generated using satellite data from Landsat 8, specifically employing the thermal infrared bands (Band 10) combined with the NDVI (Normalized Difference Vegetation Index) derived from Bands 4 and 5. This combination allowed for a precise measurement of surface temperatures across urban and rural areas. The analysis used QGIS and Google Earth Engine to process the data and render the map. The LST values represent the surface heat emitted by different land cover types, with hotter areas typically having less vegetation than concrete surfaces</div>
+</div>
+</div>
+<div class="gallery-image-container">
+  <img class="gallery-image" src="../assets/images/UHI/Figur 5.png"/>
+  <span class="image-caption">Land Surface Temperature map of Gothenburg showing the highest temperature zones during summer 2024</span>
+</div>
+<div id="project-details">
+<div class="subheader-text">Urban Heat Island</div>
+<div class="project-details-content">
+<div class="body-text">This UHI map visualizes the relative heat intensity in urban areas of Gothenburg compared to the surrounding rural zones. The UHI effect is calculated by comparing the land surface temperature across regions and emphasizing areas where the temperature exceeds 30°C. The map was derived by filtering out lower temperature zones using the raster calculator tool in QGIS. The analysis highlights dense urban spaces with large amounts of impervious surfaces like asphalt and buildings, where heat tends to accumulate​.</div>
+</div>
+</div>
+<div class="gallery-image-container">
+<img class="gallery-image" src="../assets/images/UHI/Figur 6.png"/>
+<span class="image-caption" style="font-style: italic; ">Areas with the strongest Urban Heat Island effect, especially in the central city, reaching over 40°C in some places.</span>
+</div>
+<div class="modal" id="myModal">
+<span class="close">×</span>
+<img class="modal-content" id="modalImg"/>
+</div>
+<div id="project-details">
+<div class="subheader-text">Urban Thermal Field Variance Index (UTFVI)</div>
+<div class="project-details-content">
+<div class="body-text">The UTFVI map quantifies temperature variation within Gothenburg, providing a detailed assessment of heat distribution across different neighborhoods. This index is calculated using satellite data from Landsat 8, combining surface temperature data with vegetation cover. The resulting map categorizes areas into different levels of thermal intensity, allowing for the identification of hotspots with the most severe heat stress. By visualizing thermal variance, this map aids urban planners in targeting areas for climate mitigation efforts like increasing vegetation or altering building materials</div>
+</div>
+</div>
+<div class="gallery-image-container">
+<img class="gallery-image" src="../assets/images/UHI/Figur 8.png"/>
+<span class="image-caption" style="font-style: italic; ">UTFVI (Urban Thermal Field Variance Index) displaying thermal variations over Gothenburg</span>
+</div>
+
+<!-- FOOTER -->
+<div id="footer">
+<!--
+        TODO - Change href to your Instagram account (can also delete entire "a" element if no Instagram)
+
+        This should be the same across all pages.
+      -->
+<a class="icon-link" href="https://www.linkedin.com/in/%C3%B3li-valur-viglundsson-74400681/" target="_blank">
+<image class="footer-icon" src="../assets/icons/linkedin-svgrepo-com.svg">
+</image></a>
+<a class="icon-link" href="mailto:oli.viglundsson@gmail.com">
+<image class="footer-icon" src="../assets/icons/mail.svg"/>
+</a>
+</div>
+</div></body>
+</html>
